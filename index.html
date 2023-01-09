@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color scheme</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <input type="color">
+        <select>
+            <option value="Monochrome">Monochrome</option>
+            <option value="Monochrome-Dark">Monochrome-Dark</option>
+            <option value="Monochrome-Light">Monochrome-Light</option>
+            <option value="Analogic">Analogic</option>
+            <option value="Complement">Complement</option>
+            <option value="Analogic-Complement">Analogic-Complement</option>
+            <option value="Triad">Triad</option>
+            <option value="Quad">Quad</option>
+        </select>
+        <button>Get color scheme</button>
+        <div class="numbers to-hide">
+            <p class="p1">1</p>
+            <p class="p2">2</p>
+            <p class="p3">3</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="color-box">
+                <div class="color"></div>
+                <h2 class="color-hex">HEX</h2>
+            </div>
+            <div class="color-box">
+                <div class="color"></div>
+                <h2 class="color-hex">HEX</h2>
+            </div>
+            <div class="color-box">
+                <div class="color"></div>
+                <h2 class="color-hex">HEX</h2>
+            </div>
+            <div class="color-box">
+                <div class="color"></div>
+                <h2 class="color-hex">HEX</h2>
+            </div>
+            <div class="color-box">
+                <div class="color"></div>
+                <h2 class="color-hex">HEX</h2>
+            </div>
+        </div>
+    </main>   
+
+    <div class="shadow to-hide"></div>
+    <div class="modal to-hide">
+        <h1>Instruction</h1>
+        <ol>
+            <li 
+            onmouseenter="{hadleAnimation('p1')}" 
+            onmouseleave="{hadleAnimation('p1')}"
+            >Pick your color.</li>
+            <li 
+            onmouseenter="{hadleAnimation('p2')}" 
+            onmouseleave="{hadleAnimation('p2')}"
+            >Choose mode.</li>
+            <li 
+            onmouseenter="{hadleAnimation('p3')}" 
+            onmouseleave="{hadleAnimation('p3')}"
+            >Click the button to get schemes of your color.</li>
+
+            <p>Note: You can also click HEX value at the bottom to choose it directly and copy it to clipboard.</p>
+        </ol>
+        <button class="close-btn">Close</button>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
