@@ -20,7 +20,7 @@ function start() {
 		}
 		liItem[i].classList.add('active');
 		i++;
-		hadleAnimation(i)
+		hadleAnimation(i);
 	}
 }
 
@@ -34,9 +34,8 @@ hexValues.forEach(hex =>
 );
 
 function hadleAnimation(p) {
-	console.log(p);
 	document.querySelector(`.p${p}`).classList.add('active');
-	p > 0 && document.querySelector(`.p${p-1}`).classList.remove('active');
+	p >= 2 && document.querySelector(`.p${p - 1}`).classList.remove('active');
 }
 
 function handleApp() {
