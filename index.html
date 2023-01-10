@@ -28,7 +28,7 @@
             <option value="Triad">Triad</option>
             <option value="Quad">Quad</option>
         </select>
-        <button>Get color scheme</button>
+        <button class="color-btn">Get color scheme</button>
         <div class="numbers to-hide">
             <p class="p1">1</p>
             <p class="p2">2</p>
@@ -62,24 +62,16 @@
 
     <div class="shadow to-hide"></div>
     <div class="modal to-hide">
+        <div class="modal-shadow to-hide hidden"></div>
         <h1>Instruction</h1>
         <ol>
-            <li 
-            onmouseenter="{hadleAnimation('p1')}" 
-            onmouseleave="{hadleAnimation('p1')}"
-            >Pick your color.</li>
-            <li 
-            onmouseenter="{hadleAnimation('p2')}" 
-            onmouseleave="{hadleAnimation('p2')}"
-            >Choose mode.</li>
-            <li 
-            onmouseenter="{hadleAnimation('p3')}" 
-            onmouseleave="{hadleAnimation('p3')}"
-            >Click the button to get schemes of your color.</li>
+            <li class="li1">Pick your color.</li>
+            <li class="li2">Choose mode.</li>
+            <li class="li3">Click the button to get schemes of your color.</li>
 
             <p>Note: You can also click HEX value at the bottom to choose it directly and copy it to clipboard.</p>
         </ol>
-        <button class="close-btn">Close</button>
+        <button class="close-btn">Next</button>
     </div>
 
     <script src="./index.js"></script>
